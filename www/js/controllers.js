@@ -57,11 +57,11 @@ angular.module('starter.controllers', [])
   .then(
     function(data){
       // alert("getting");
-      console.log(data);
+      //console.log(data);
     },
     function(err){
       // console.log(err);
-      alert("getting error");
+      //alert("getting error");
     }
     );
 
