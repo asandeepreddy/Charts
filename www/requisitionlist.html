@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PFC Requisitions</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet"  href="css/jquery.mobile-1.2.0.css" />
+        <link rel="stylesheet"  href="css/requisitionist.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <script src="jsfiles/jquery-1.8.2.js"></script>
+        <script src="jsfiles/jquery.mobile-1.2.0.js"></script>
+        <script src="jsfiles/constants.js"></script>
+        <script src="jsfiles/requsitionlist.js"></script>
+
+    </head>
+    <body>
+        <div data-role="page" class="total_body_div">
+            <div class="loading_imgdiv" id="loading_screen" >
+                <p class="loading_text">Loading...</p>
+                <p class="loading_img"></p>
+            </div>
+            <div  id="requisitions_div">
+                <div data-role=header class="ui-custom-header">
+                    <a href=# data-role="none" class="logout" id="logout">Logout</a>
+                    <h1>PFC Requisitions</h1>
+                    <p class="header_name" id="user_name"></p>
+                    <div>
+                    	<a href=# data-role="none" class="add_img" id="add_img">+</a>
+                    	<img src="./images/filter-10.png" class="filter_img" id="filter_img">      	
+                    </div>
+                </div>
+                <div class="requisitions_list">
+                    <div data-role=content class="search_button_div">
+                        <div data-role="fieldcontain" class="search_div">
+                            <input type="search"   placeholder="Search" id="list_text" /></div>
+                        <a href="" data-inline="true" data-transition="flow" class="search_button" id="search_list">Search</a>
+                    </div>
+                    <div data-role="content" id="listview" >
+                        <ul data-role=listview id="requisitionlist">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-role=page id="filter_page" >
+                <div data-role=header >
+                    <a href=# data-role="none" class="filter_cancel" id="filter_cancel">Back</a>
+                    <h1> Filters</h1>
+                    <a href=# data-role="none" class="filter_save" id="filter_save">Done</a>
+                </div> 
+                <div data-role=content >
+                    <p class="filter_name">Filter</p>
+                    <form id="form_filter">
+                        <fieldset data-role="controlgroup">
+                            <input type="checkbox" name="checkbox_requestor" id="checkbox_requestor" value="Requestor">
+                            <label for="checkbox_requestor">Requestor</label>
+                            <input type="checkbox" name="checkbox_creator" id="checkbox_creator" value="Creator">
+                            <label for="checkbox_creator">Creator</label>
+                        </fieldset>
+                    </form>
+                    <p>Status</p>
+                    <form id="form_status">
+                        <fieldset data-role="controlgroup">
+                            <input type="checkbox" name="checkbox_status" id="checkbox_incomplete" value="INCOMPLETE" checked="checked">
+                            <label for="checkbox_incomplete">INCOMPLETE</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_inprocess" value="IN PROCESS" checked="checked">
+                            <label for="checkbox_inprocess">IN PROCESS</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_rejected" value="REJECTED">
+                            <label for="checkbox_rejected">REJECTED</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_draft" value="DRAFT">
+                            <label for="checkbox_draft">DRAFT</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_error" value="ERROR">
+                            <label for="checkbox_error">ERROR</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_submitted" value="SUBMITTED">
+                            <label for="checkbox_submitted">SUBMITTED</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_processed" value="PROCESSED">
+                            <label for="checkbox_processed">PROCESSED</label>
+                            <input type="checkbox" name="checkbox_status" id="checkbox_approved" value="APPROVED">
+                            <label for="checkbox_approved">APPROVED</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div> 
+            <div data-role="popup" id="canceldialog" data-overlay-theme="a" data-theme="c" class="ui-popup-alert">
+                <div  class="cancel_dailogshow" data-rel="popup" data-inline="true" >
+                    <p class="daialog_header">PFC Mobile Alert</p>
+                    <p id="error_msg" class="error_msg_text"> </p>
+                    <div class="cancel_dialog_line_img"></div>
+                    <div class="cancel_dialog_btn_div" align="center">
+                        <a href="" data-inline="true" data-rel="back" data-transition="flow" class="cancel_dialog_nobtn" id="dialoglink">Ok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

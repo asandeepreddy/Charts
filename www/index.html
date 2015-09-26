@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PFC Requisitions</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet"  href="css/jquery.mobile-1.2.0.css" />
+        <link rel="stylesheet" href="css/login.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <script src="jsfiles/jquery-1.8.2.js"></script>
+        <script src="jsfiles/jquery.mobile-1.2.0.js"></script>
+        <script src="jsfiles/constants.js"></script>
+        <script src="jsfiles/login.js"></script>        
+
+    </head>
+    <body >
+        <div data-role="page">
+            <div data-role="content" id="loginform_div">
+                <div  data-role="fieldcontain" class="companylogo_div">
+                    <!--<img src="./images/paramount.png" class="companylogo_img">-->
+                </div>  
+                <div id="version" class="version">v0.95.7</div>
+                <div data-role="fieldcontain" class="username_fileddiv">
+                    <input name="user_name" placeholder="Username"  id="username" type="text" class="input_txt_filed"/><br/>
+                    <input name="pass_word"  placeholder="Password" id="password" type="password" class="input_txt_filed"/>
+                </div>
+ 
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal"> 
+                        <legend>Remember me</legend>
+                        <input type="radio" name="yes" id="yes" value="1" />
+                        <label for="yes">YES</label>
+
+                        <input type="radio" name="yes" id="no" value="0"  />
+                        <label for="no">NO</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain" id="login" class="login_div">
+                    <a href=# data-role="none" class="login_button">Login</a>
+                </div>
+            </div>
+            
+            <div class="loading_imgdiv" id="loading_screen" >
+                <p class="loading_text">Loading...</p>
+                <p class="loading_img"></p>
+            </div>
+            <div data-role="popup" id="canceldialog" data-overlay-theme="a" data-theme="c" class="ui-popup-alert">
+                <div  class="cancel_dailogshow" data-rel="popup" data-inline="true" >
+                    <p class="daialog_header">PFC Mobile Alert</p>
+                    <p id="error_msg" class="error_msg_text"> </p>
+                    <div class="cancel_dialog_line_img"></div>
+                    <div class="cancel_dialog_btn_div" align="center">
+                        <a href="" data-inline="true" data-rel="back" data-transition="flow" class="cancel_dialog_nobtn" id="dialoglink">Ok</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

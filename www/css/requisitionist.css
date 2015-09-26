@@ -1,0 +1,309 @@
+.ui-page 
+{ 
+    background: white;
+}
+.total_body_div
+{
+    min-width: 320px;
+}
+.ui-bar-a 
+{
+    height: 42px !important;
+}
+.ui-header .ui-btn-left, .ui-header .ui-btn-right, .ui-footer .ui-btn-left, .ui-footer .ui-btn-right 
+{
+    position: absolute;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    top: 4px;
+}
+.ui-title
+{
+	font-size: 14px !important;
+    margin-top: 9px !important;
+    text-shadow: none;
+}
+.ui-custom-header{
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.requisitions_list{
+    position: relative;
+    top: 42px;
+}
+.header_name
+{
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: -9px;
+    margin-bottom: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    text-align: center;
+    text-shadow: none;
+    text-overflow:ellipsis;
+    width: 60%;
+    white-space:nowrap;
+}
+
+.logout 
+{
+    background:url('../images/backimg.png')no-repeat center; 
+    background-size: 80px 35px;
+    color:white;
+    font-size:17px;
+    float:left;
+    height:35px;
+    line-height:35px;
+    margin-top: -2px !important;
+    text-align:center;
+    text-shadow: none;
+    text-decoration:none;
+    width:80px;
+}
+.add_img
+{
+    background:url('../images/save_black.png')no-repeat center; 
+    background-size: 35px 35px;
+    color:white;
+    float:right;
+    font-size:25px;
+    height:35px;
+    line-height:30px;
+    margin-top: 0px;
+    margin-right: 50px;
+    text-align:center;
+    text-decoration:none;
+    text-shadow: none;
+    width:35px;
+}
+.filter_img
+{
+    background:url('../images/save_black.png')no-repeat center; 
+    background-size: 35px 35px; 
+    float:right;
+    height:35px;
+    margin-top: 0px;
+    margin-right: 5px;
+    width:35px;
+}
+.search_button_div
+{
+    border-bottom: 1px solid #c3c4c6; 
+    background-color: white;
+    height: 41px;
+    overflow: hidden;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.search_div
+{
+    border-bottom-width: 0px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 75%;
+}
+.ui-input-search
+{
+    width: 100% !important;    
+}
+.ui-icon, .ui-icon-searchfield:after {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("images/icons-18-white.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+}
+
+.ui-link {
+    color: #469f26 !important;
+    font-weight: bold;
+}
+.list_div
+{
+    /*height: 50px;*/
+    margin-left: 2%;
+    width:70%;
+}
+.reqnumber
+{
+    color:black;
+    font-size:16px;
+    font-family: sans-serif;
+    font-weight:bold;
+    line-height:25px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    margin-left:0%;
+    text-decoration: none;
+    max-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.requisition_desc
+{
+    color: gray;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    word-wrap:break-word;
+    width: 90%;
+    line-height: 20px;
+}
+.reqwarehouse_span
+{
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.subscript
+{
+    color:#01479c;
+    float:right;    
+    font-size:11px;
+    font-family:sans-serif;
+    margin-top: -14px;
+    margin-right: 5%;
+}
+.subscript_app
+{
+    color:green;
+}
+.subscript_err
+{
+    color:red;
+}
+
+.totalamount
+{
+    color:gray;
+    font-size:20px;
+    font-weight:bold;
+    font-family:sans-serif;
+    float:right;
+    margin-top:-40px;
+    margin-bottom: 0px;
+    margin-right: 5%;
+    text-align:right;
+    width:35%;
+}
+.arrow
+{
+    float:right;
+    height:13px;
+    margin-top: 6px;
+    padding-left: 10px;
+    width:9px;
+}
+.ui-li 
+{
+    height: 50px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.requisition_list
+{
+    border-bottom: 1px solid #c3c4c6; 
+    background-image: url('../images/arrow.png') !important;
+    background-size: 9px 13px !important;
+    background-repeat: no-repeat !important;
+    background-position: 99% center !important;
+    padding-bottom: 5px;
+}
+.ui-icon-delete
+{
+    background-position: center center;
+    background-image: url("../images/close-icon.png") !important;
+    background-size: 29px 29px !important;
+}
+.filter_save
+{
+    background:url('../images/save_black.png')no-repeat center; 
+    background-size: 70px 34px; 
+    color:white;
+    float:right;
+    font-size:17px;
+    height:34px;
+    line-height:35px;
+    margin-top: 0px;
+    text-align:center;
+    text-decoration:none;
+    text-shadow: none;
+    width:70px;
+}
+.filter_cancel
+{
+    background:url('../images/backimg.png')no-repeat center; 
+    background-size: 75px 35px;
+    color:white;
+    float:left;
+    font-size:17px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    text-shadow: none;
+    text-decoration:none;
+    width:75px;
+}
+.filter_name
+{
+    margin-top: -10px;
+}
+.ui-icon-checkbox-off
+{
+    border: 1px solid #c3c4c6;
+}
+.ui-icon
+{
+    background-image: none ;
+}
+.ui-icon-checkbox-on
+{
+    background-color:  #469f26 !important;
+}
+.ui-controlgroup-controls
+{
+    margin-top: -10px;
+}
+.ui-custom-header > div{
+	float: right; margin-top: -35px; margin-left: 0px; margin-right: -42px; width: 130px;
+}
+
+			@media only screen and (-webkit-device-pixel-ratio:.75){
+                /* Put CSS for low density (ldpi) Android layouts in here */
+
+            }
+            @media only screen and (-webkit-device-pixel-ratio:1){
+                /* Put CSS for medium density (mdpi) Android layouts in here */
+
+            }
+            @media only screen and (-webkit-device-pixel-ratio:1.5){
+                /* Put CSS for high density (hdpi) Android layouts in here */
+
+            }
+            @media only screen and (device-width: 320px) and (device-height: 480px) {
+				.ui-custom-header > div{
+					margin-top: -39px;
+				}
+            }
+            @media only screen and (device-width: 320px) and (device-height: 568px) {
+				.ui-custom-header > div{
+					margin-top: -39px;
+				}
+            }
+            @media only screen 
+            and (min-device-width : 768px) 
+            and (max-device-width : 1024px)  { 
+				.ui-custom-header > div{
+					margin-top: -39px;
+				}
+            }
