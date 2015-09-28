@@ -70,3 +70,10 @@
 .widget-stats .stats-progress .progress-bar {
     background: #fff none repeat scroll 0 0;
 }
+
+
+/*Panel*/
+.panel-heading {
+    background: #242a30 none repeat scroll 0 0;
+    height: 40px;
+}
