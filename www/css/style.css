@@ -6,4 +6,67 @@
     float: left;
     color: white;
     margin-top: 50px;
+    border-radius: 4px;
+}
+
+
+.stats-title {
+    font-size: 12px;
+    line-height: 1.1;
+    margin: 10px 0 7px !important;
+    position: relative;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.stats-number {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.stats-progress {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    height: 2px;
+    margin: 0 -15px 12px;
+    background-color: #337ab7;
+}
+
+.progress {
+    background-color: #337ab7 !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+   /* height: 20px;
+    margin-bottom: 20px;*/
+    overflow: hidden;
+     background: #e2e7eb none repeat scroll 0 0;
+    box-shadow: none;
+    width: 100%;
+	margin-left: -5px;
+}
+.progress-bar {
+    background: #348fe2 none repeat scroll 0 0;
+    box-shadow: none;
+}
+.progress-bar {
+    background-color: #337ab7;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    transition: width 0.6s ease 0s;
+}
+.stats-desc {
+    font-weight: 300;
+    margin-bottom: 0;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.widget-stats .stats-desc, .widget-stats .stats-title {
+    color: rgba(255, 255, 255, 0.6);
+}
+.widget-stats .stats-progress .progress-bar {
+    background: #fff none repeat scroll 0 0;
 }
