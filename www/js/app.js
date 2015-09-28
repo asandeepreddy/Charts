@@ -37,7 +37,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
-
+/*.state('tab', {
+    url: '/tab',
+    abstract: true,
+    templateUrl: 'templates/tab-dash.html',
+    controller: 'DashCtrl'
+  })*/
   // Each tab has its own nav history stack:
 
   .state('tab.dash', {

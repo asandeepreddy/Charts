@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+.dash-block {
+    height: 100px;
+    width: 45%;
+    margin: 0 2%;
+    float: left;
+    color: white;
+    margin-top: 50px;
+}
